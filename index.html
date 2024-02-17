@@ -12,20 +12,134 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="font-family: Raleway, sans-serif;">
+<body style="font-family: Raleway, sans-serif;" class="container mx-auto">
     <!-- header area section  -->
     <header>
-        <h1>Hello World</h1>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="lg:text-[30px] cursor-pointer font-extrabold">B-Paribahan</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-lg font-medium text-gray-500"><a>Home</a></li>
+                <li class="text-lg font-medium text-gray-500"><a>About</a></li>
+                <li class="text-lg font-medium text-gray-500"><a>Destination</a></li>
+                <li class="text-lg font-medium text-gray-500"><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn border-[#1DD100] cursor-pointer"><span class="text-[#1DD100] lg:font-semibold">Bus</span> <img src="./images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+          <div class="mb-5 bg-[url('/images/banner.png')] bg-no-repeat bg-center bg-cover  h-[550px] rounded-2xl">
+            <div class="text-center space-y-6">
+                <h1 class="lg:text-6xl text-[30px] font-extrabold text-white pt-[80px]">End-to-End Travel with <br> <span class="text-[#1DD100]">B Paribahan</span> </h1>
+                <p class="lg:w-[600px] mx-auto text-white text-base font-medium">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100] border-none text-[20px] font-semibold text-black">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="lg:flex items-center justify-around lg:relative lg:bottom-[70px]">
+            <div class="flex items-center gap-5 bg-white p-5 rounded-xl border-b-4 border-[#1DD100]">
+                <img src="./images/people.png" alt="" class="border-dashed border-2 border-gray-400 px-2">
+                <div>
+                    <h4 class="text-[35px] font-bold">500K+</h4>
+                    <p class="text-[18px] font-semibold">Registered users</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5 bg-white p-5 rounded-xl border-b-4 border-[#1DD100]">
+                <img src="./images/ticket-cupon.png" alt="" class="border-dashed border-2 border-gray-400 px-2">
+                <div>
+                    <h4 class="text-[35px] font-bold">1.7 lacks</h4>
+                    <p class="text-[18px] font-semibold">Tickets sold</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5 bg-white p-5 rounded-xl border-b-4 border-[#1DD100]">
+                <img src="./images/stoppage.png" alt="" class="border-dashed border-2 border-gray-400 px-2">
+                <div>
+                    <h4 class="text-[35px] font-bold">80K+</h4>
+                    <p class="text-[18px] font-semibold">Rental partners</p>
+                </div>
+            </div>
+          </div>
     </header>
 
     <!-- main area section  -->
     <main>
+        <section>
+            <h2 class="text-[30px] font-bold text-black text-center lg:mb-3 mt-5">Best offers for you</h2>
+            <div class="lg:flex justify-evenly items-center ">
+                <div class="flex justify-center items-center bg-[#ffbf0f] lg:w-[500px] h-[200px] my-5 px-5 rounded-xl">
+                    <div class="space-y-3">
+                        <h3 class="lg:text-5xl text-lg  font-bold">15% OFF</h3>
+                        <h5 class="lg:text-xl text-lg  font-bold">on your next purchase</h5>
+                        <p class="text-xs font-bold ">use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="" class="mr-2">
+                    <div class="">
+                        <h2 class="lg:text-4xl text-lg  font-bold">NEW15</h2>
+                        <p class="text-xs font-bold">Coupon Code</p>
+                    </div>
+                </div>
 
+                <div class="flex justify-center items-center bg-[#f78c9c] lg:w-[500px]  h-[200px] my-5 px-5 rounded-xl">
+                    <div class="space-y-3">
+                        <h3 class="lg:text-5xl text-lg  font-bold">20% OFF</h3>
+                        <h5 class="lg:text-xl text-lg  font-bold">on your next purchase</h5>
+                        <p class="text-xs font-bold ">use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="" class="">
+                    <div class="">
+                        <h2 class="lg:text-4xl text-lg  font-bold">Couple 20</h2>
+                        <p class="text-xs font-bold">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <button class="mt-5 btn text-[#1DD100] outline outline-[#1DD100] font-semibold">See All Offers</button>
+            </div>
+        </section>
     </main>
 
     <!-- footer area section  -->
-    <footer>
-
+    <footer class="bg-[#030712] lg:h-[300px] mt-[50px]">
+        <div class="lg:flex justify-between items-center p-10">
+            <div class="space-y-5">
+                <h2 class="lg:text-3xl text-xl font-medium lg:font-bold text-white cursor-pointer">B-Paribahan</h2>
+                <p class="lg:text-xl text-gray-300">B-Paribahan is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <br>
+            <div class=" space-y-5">
+                <h4 class="text-xl font-medium text-white">Download our app</h4>
+                <img src="./images/playstore.png" alt="" class="cursor-pointer">
+            </div>
+        </div>
+        <div class="lg:w-[1200px] mx-auto">
+            <hr class="border-dashed">
+        </div>
+        <div class="lg:flex flex flex-col-reverse  lg:justify-between lg:items-center p-10">
+            <div class="space-y-5">
+                <p class="lg:text-base lg:font-medium text-gray-300">@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <br>
+            <div class="flex justify-center items-center">
+                <li class="list-none lg:mr-5 mr-2 lg:text-base lg:font-medium cursor-pointer text-white">Terms & condition</li>
+                <li class="list-none lg:mr-5 mr-2 lg:text-base lg:font-medium cursor-pointer text-white">Return & refund policy</li>
+                <li class="list-none lg:mr-5 mr-2 lg:text-base lg:font-medium cursor-pointer text-white">Privacy policy</li>
+            </div>
+        </div>
     </footer>
 
     <!-- javascript link  -->
