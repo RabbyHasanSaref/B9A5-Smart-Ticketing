@@ -20,7 +20,7 @@ function getInputValueById(elementId) {
 // ------------------------------------------------------------------------
 const allBtn = document.querySelectorAll('#add-seat');
 let count1 = 0;
-let count2 = 8;
+let count2 = 40;
 for(const addSeat of allBtn){
     addSeat.addEventListener('click', function(e){
         if(count1 <= 3){
